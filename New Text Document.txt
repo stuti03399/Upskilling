@@ -1,0 +1,29 @@
+create database Passenger;
+
+show databases;
+
+use Passenger;
+
+Create Table BookingList(
+   PNRNumber INTEGER NOT NULL PRIMARY KEY,
+   TravelDate Date,
+   source varchar(30),
+   Destination varchar(25),
+   seatPreference varchar(10),
+   mealPreference varchar(10)
+  );
+
+Select * from BookingList;
+
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1456321,'01/02/21','Tivandrum','Chennai','Window','veg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1485632,'01/02/21','Tivandrum','Dsingapore','Aisle','Nonveg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1542364,'01/04/21','Mumbai','Delhi','Window','veg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1444482,'01/06/21','Chennai','UAE','Asile','veg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1987456,'01/08/21','kochi','Kolombo','Middle','veg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1589621,'01/10/21','Chennai','Kolkatha','Window','Nonveg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1589632,'01/10/21','Mumbai','Delhi','Aisle','Nonveg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1588874,'01/11/21','Delhi','Singapore','Middle','veg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1596631,'01/12/21','Singapore','Kochi','Asile','veg');
+insert into BookingList(PNRnumber,TravelDate,source,Destination,seatPreference,mealPreference) values(1444896,'01/02/21','Trivandrum','Delhi','Middle','Nonveg');
+
+Select * from BookingList
